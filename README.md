@@ -1,4 +1,4 @@
-# Project Readme
+# Project RogueLike
 
 This project is using Godot version 3.5. Please make sure you have this version or higher installed on your device before running the project.
 
