@@ -3,28 +3,28 @@
 [ext_resource path="res://assets/8-BIT WONDER.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/Pixeled.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://inventory/Inventory.gd" type="Script" id=3]
-[ext_resource path="res://assets/Fonts/QuartzoBold-W9lv.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/Fonts/Roboto-Regular.ttf" type="DynamicFontData" id=4]
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=7]
 size = 2
 font_data = ExtResource( 1 )
 
 [sub_resource type="Theme" id=5]
-default_font = SubResource( 4 )
+default_font = SubResource( 7 )
 
 [sub_resource type="DynamicFont" id=6]
-size = 9
+size = 31
 font_data = ExtResource( 4 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=8]
 size = 12
 font_data = ExtResource( 2 )
 
 [sub_resource type="Theme" id=2]
-default_font = SubResource( 3 )
+default_font = SubResource( 8 )
 
 [sub_resource type="DynamicFont" id=1]
-size = 10
+size = 83
 extra_spacing_top = -8
 extra_spacing_bottom = -8
 font_data = ExtResource( 2 )
@@ -33,26 +33,28 @@ font_data = ExtResource( 2 )
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = -1920.0
+margin_bottom = -1080.0
+rect_scale = Vector2( 2, 2 )
 script = ExtResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-margin_left = 641.0
-margin_top = 83.0
-margin_right = 672.201
-margin_bottom = 98.168
-rect_scale = Vector2( 5.29777, 6.84903 )
+margin_left = 1202.0
+margin_top = 630.0
+margin_right = 1495.41
+margin_bottom = 715.0
 color = Color( 0.129412, 0.121569, 0.145098, 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="RichTextLabel" type="Label" parent="CanvasLayer/ColorRect"]
-margin_left = 0.564079
-margin_top = 0.521103
-margin_right = 50.5641
-margin_bottom = 50.5211
+margin_left = -2.0
+margin_top = -5.0
+margin_right = 578.0
+margin_bottom = 277.0
 theme = SubResource( 5 )
 custom_fonts/font = SubResource( 6 )
 text = "Select an item"
@@ -61,11 +63,10 @@ autowrap = true
 [node name="ItemList" type="ItemList" parent="CanvasLayer"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 3.0
-margin_top = -548.0
-margin_right = 404.0
-margin_bottom = -434.0
-rect_scale = Vector2( 3.17313, 2.91241 )
+margin_left = 110.0
+margin_top = -262.0
+margin_right = 1200.0
+margin_bottom = 465.0
 theme = SubResource( 2 )
 max_columns = 3
 same_column_width = true
@@ -78,10 +79,10 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="CanvasLayer/ItemList"]
-margin_left = 0.315146
-margin_top = 102.664
-margin_right = 65.3151
-margin_bottom = 120.664
+margin_left = 67.0
+margin_top = 475.0
+margin_right = 691.0
+margin_bottom = 804.0
 rect_scale = Vector2( 0.642161, 0.642161 )
 custom_fonts/font = SubResource( 1 )
 text = "DROP"

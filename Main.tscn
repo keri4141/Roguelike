@@ -8,13 +8,13 @@ extents = Vector2( 253.5, 34.5 )
 [node name="Node" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 108, -48 )
+position = Vector2( 158.5, 95 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -6.5
-margin_top = -8.5
-margin_right = 493.5
-margin_bottom = 56.5
+margin_left = 44.0
+margin_top = 134.5
+margin_right = 544.0
+margin_bottom = 199.5
 __meta__ = {
 "_edit_group_": true
 }
