@@ -1,6 +1,5 @@
 extends 'State.gd'
 
-export var walkSpeed = 150
 export var jumpStrength = 150
 #Euler's method:
 # https://www.youtube.com/watch?v=_0mvWedqW7c
@@ -47,7 +46,7 @@ func enter(msg:={}):
 	
 func physics_update(_delta: float):
 	var direction = Input.get_action_strength("right") - Input.get_action_strength("left")
-	player.velocity.x = direction * walkSpeed * 1.5
+	player.velocity.x = direction * player.speed
 	if Input.is_action_pressed("down"):
 		player.velocity.y = -player.jumpVelocity
 	if Input.is_action_just_released("up") && player.velocity.y < -300:
@@ -59,6 +58,8 @@ func physics_update(_delta: float):
 	player.velocity.y = finalVelocity # update velocity
 	player.move_and_slide(player.velocity, Vector2.UP) # apply movement
 
+	if player.is_on_ceiling():
+		player.velocity.y = -player.jumpVelocity / 10 
 	if player.is_on_floor():
 		if is_equal_approx(player.velocity.x,0.0):
 			state_machine.transition_to('Idle')

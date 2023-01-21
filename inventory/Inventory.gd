@@ -28,7 +28,6 @@ func _process(_delta):
 	if Input.is_action_just_pressed("inventory"):
 		if $CanvasLayer.visible == false:
 			$CanvasLayer.visible = true
-			print("YEH")
 		else:
 			$CanvasLayer.visible = false
 			$CanvasLayer/ColorRect/RichTextLabel.text = 'Select an item'

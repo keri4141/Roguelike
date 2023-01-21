@@ -24,7 +24,7 @@ font_data = ExtResource( 2 )
 default_font = SubResource( 8 )
 
 [sub_resource type="DynamicFont" id=1]
-size = 83
+size = 23
 extra_spacing_top = -8
 extra_spacing_bottom = -8
 font_data = ExtResource( 2 )
@@ -41,19 +41,19 @@ script = ExtResource( 3 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-margin_left = 1202.0
-margin_top = 630.0
-margin_right = 1495.41
-margin_bottom = 715.0
+margin_left = 1133.0
+margin_top = 65.0
+margin_right = 1647.0
+margin_bottom = 313.0
 color = Color( 0.129412, 0.121569, 0.145098, 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="RichTextLabel" type="Label" parent="CanvasLayer/ColorRect"]
-margin_left = -2.0
-margin_top = -5.0
-margin_right = 578.0
+margin_left = 23.0
+margin_top = 14.0
+margin_right = 575.0
 margin_bottom = 277.0
 theme = SubResource( 5 )
 custom_fonts/font = SubResource( 6 )
@@ -63,27 +63,25 @@ autowrap = true
 [node name="ItemList" type="ItemList" parent="CanvasLayer"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 110.0
-margin_top = -262.0
-margin_right = 1200.0
-margin_bottom = 465.0
+margin_left = 235.0
+margin_top = -475.0
+margin_right = 1133.0
+margin_bottom = -157.0
 theme = SubResource( 2 )
 max_columns = 3
 same_column_width = true
 fixed_column_width = 100
 icon_mode = 0
-icon_scale = 0.8
 fixed_icon_size = Vector2( 80, 80 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Button" type="Button" parent="CanvasLayer/ItemList"]
-margin_left = 67.0
-margin_top = 475.0
-margin_right = 691.0
-margin_bottom = 804.0
-rect_scale = Vector2( 0.642161, 0.642161 )
+margin_left = 30.0
+margin_top = 218.0
+margin_right = 134.0
+margin_bottom = 273.0
 custom_fonts/font = SubResource( 1 )
 text = "DROP"
 flat = true
