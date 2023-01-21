@@ -44,6 +44,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+speed = 700
 jumpHeight = 200.0
 jumpTimeToPeak = 0.5
 jumpTimeToDescent = 0.4
