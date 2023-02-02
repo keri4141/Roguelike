@@ -45,6 +45,7 @@ func enter(msg:={}):
 		player.velocity.y = player.jumpVelocity
 	
 func physics_update(_delta: float):
+	print(player.isNearWall())
 	var direction = Input.get_action_strength("right") - Input.get_action_strength("left")
 	player.velocity.x = direction * player.speed
 	if Input.is_action_pressed("down"):

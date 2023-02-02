@@ -14,3 +14,6 @@ onready var fallGravity : float = -1.0 * ((-2.0 * jumpHeight) / (jumpTimeToDesce
 
 func getGravity() -> float:
   return jumpGravity if velocity.y < 0.0 else fallGravity
+
+func isNearWall():
+	return $WallChecker.is_colliding() 

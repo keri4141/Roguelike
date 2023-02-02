@@ -33,6 +33,7 @@ func _process(delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	state.physics_update(delta)
+	
 
 
 # This function calls the current state's exit() function, then changes the active state,
